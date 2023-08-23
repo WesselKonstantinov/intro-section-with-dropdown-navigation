@@ -94,3 +94,25 @@ select {
   --line-height-2xl: 1.167;
   --line-height-3xl: 1.625;
 }
+
+/* || Global styles */
+body {
+  background-color: white;
+  color: var(--color-medium-gray);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-3xl);
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
