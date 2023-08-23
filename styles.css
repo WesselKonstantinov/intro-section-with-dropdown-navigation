@@ -1,3 +1,5 @@
+/* || CSS Reset (https://andy-bell.co.uk/a-modern-css-reset/) */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -71,4 +73,24 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* || Custom properties */
+:root {
+  --color-almost-white: hsl(0 0% 98%);
+  --color-medium-gray: hsl(0 0% 41%);
+  --color-almost-black: hsl(0 0% 8%);
+  --font-family-primary: "Epilogue", sans-serif;
+  --font-size-s: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 2.25rem;
+  --font-size-2xl: 5rem;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-base: 1;
+  --line-height-lg: 1.143;
+  --line-height-xl: 1.556;
+  --line-height-2xl: 1.167;
+  --line-height-3xl: 1.625;
 }
