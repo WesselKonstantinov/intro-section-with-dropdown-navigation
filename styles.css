@@ -116,3 +116,63 @@ body {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* || Hero section styles */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.hero__image {
+  height: auto;
+}
+
+.hero__intro {
+  padding-inline: 1rem;
+  text-align: center;
+}
+
+.hero__intro > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.hero__title {
+  color: var(--color-almost-black);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-2xl);
+  letter-spacing: -0.014em;
+}
+
+.hero__cta {
+  --flow-space: 1.5rem;
+}
+
+.hero__client-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__client-logo--databiz {
+  width: 5.08125rem;
+  height: 0.9rem;
+}
+
+.hero__client-logo--audiophile {
+  width: 3.30625rem;
+  height: 1.625rem;
+}
+
+.hero__client-logo--meet {
+  width: 4.00625rem;
+  height: 0.9rem;
+}
+
+.hero__client-logo--maker {
+  width: 3.68125rem;
+  height: 1.075rem;
+}
