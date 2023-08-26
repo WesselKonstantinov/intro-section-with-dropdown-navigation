@@ -54,11 +54,11 @@
             />
           </button>
           <ul role="list" id="menu-list" class="nav__list">
-            <li role="listitem" class="nav__item">
+            <li role="listitem" class="nav__item nav__item--features">
               <button
                 aria-expanded="false"
                 aria-controls="features-submenu"
-                class="nav__subtoggle"
+                class="nav__subtoggle js-subtoggle"
               >
                 Features
                 <svg
@@ -77,7 +77,12 @@
                   />
                 </svg>
               </button>
-              <ul role="list" id="features-submenu" class="nav__sublist">
+              <ul
+                role="list"
+                id="features-submenu"
+                class="nav__sublist nav__sublist--features"
+                hidden
+              >
                 <li role="listitem" class="nav__subitem">
                   <a href="/" class="nav__link">
                     <img
@@ -85,7 +90,7 @@
                       alt=""
                       width="14"
                       height="16"
-                      class="nav__icon"
+                      class="nav__icon nav__icon--todo"
                     />
                     <span class="nav__link-text">Todo List</span>
                   </a>
@@ -97,7 +102,7 @@
                       alt=""
                       width="16"
                       height="16"
-                      class="nav__icon"
+                      class="nav__icon nav__icon--calendar"
                     />
                     <span class="nav__link-text">Calendar</span>
                   </a>
@@ -109,7 +114,7 @@
                       alt=""
                       width="13"
                       height="17"
-                      class="nav__icon"
+                      class="nav__icon nav__icon--reminders"
                     />
                     <span class="nav__link-text">Reminders</span>
                   </a>
@@ -121,7 +126,7 @@
                       alt=""
                       width="16"
                       height="16"
-                      class="nav__icon"
+                      class="nav__icon nav__icon--planning"
                     />
                     <span class="nav__link-text">Planning</span>
                   </a>
@@ -132,7 +137,7 @@
               <button
                 aria-expanded="false"
                 aria-controls="company-submenu"
-                class="nav__subtoggle"
+                class="nav__subtoggle js-subtoggle"
               >
                 Company
                 <svg
@@ -151,7 +156,12 @@
                   />
                 </svg>
               </button>
-              <ul role="list" id="company-submenu" class="nav__sublist">
+              <ul
+                role="list"
+                id="company-submenu"
+                class="nav__sublist nav__sublist--company"
+                hidden
+              >
                 <li role="listitem" class="nav__subitem">
                   <a href="/" class="nav__link">History</a>
                 </li>
@@ -169,11 +179,11 @@
             <li role="listitem" class="nav__item">
               <a href="/" class="nav__link">About</a>
             </li>
-            <li role="listitem" class="nav__item">
-              <a href="/" class="nav__link">Login</a>
+            <li role="listitem" class="nav__item nav__item--login">
+              <a href="/" class="nav__link nav__link--login">Login</a>
             </li>
             <li role="listitem" class="nav__item">
-              <a href="/" class="nav__link">Register</a>
+              <a href="/" class="nav__link nav__link--register">Register</a>
             </li>
           </ul>
           <div class="nav__backdrop"></div>

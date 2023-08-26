@@ -10,3 +10,14 @@ nav.addEventListener("keyup", (e) => {
     navToggle.setAttribute("aria-expanded", false);
   }
 });
+
+const subToggles = document.querySelectorAll(".js-subtoggle");
+subToggles.forEach((subToggle) => {
+  const subMenu = subToggle.nextElementSibling;
+
+  subToggle.addEventListener("click", () => {
+    const isOpen = subToggle.getAttribute("aria-expanded") === "true";
+    subToggle.setAttribute("aria-expanded", !isOpen);
+    subMenu.hidden = isOpen;
+  });
+});
