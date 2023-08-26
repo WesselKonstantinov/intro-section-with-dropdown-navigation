@@ -278,24 +278,9 @@ body {
 }
 
 .nav__icon {
-  height: 1.25rem;
-}
-
-.nav__icon--todo {
-  width: 1.09375rem;
-}
-
-.nav__icon--calendar,
-.nav__icon--planning {
   width: 1.25rem;
-}
-
-.nav__icon--reminders {
-  width: 0.9375rem;
-}
-
-.nav__link-text {
-  flex: 1;
+  height: 1.25rem;
+  object-fit: contain;
 }
 
 /* || Hero section styles */
