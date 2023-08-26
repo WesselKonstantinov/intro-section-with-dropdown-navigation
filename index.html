@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
@@ -35,7 +36,7 @@
             aria-expanded="false"
             aria-label="Menu"
             aria-controls="menu-list"
-            class="nav__toggle"
+            class="nav__toggle js-toggle"
           >
             <img
               src="./images/icon-menu.svg"
@@ -43,6 +44,13 @@
               width="32"
               height="18"
               class="nav__toggle-icon"
+            />
+            <img
+              src="./images/icon-close-menu.svg"
+              alt=""
+              width="26"
+              height="26"
+              class="nav__toggle-icon nav__toggle-icon--close"
             />
           </button>
           <ul role="list" id="menu-list" class="nav__list">
