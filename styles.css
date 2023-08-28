@@ -405,6 +405,7 @@ body {
     flex-direction: row;
     gap: 2.5rem;
     align-items: center;
+    overflow: visible;
     font-size: var(--font-size-s);
     line-height: var(--line-height-lg);
     transition: none;
