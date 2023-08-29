@@ -231,6 +231,11 @@ body {
   align-items: center;
   gap: 1rem;
   cursor: pointer;
+  transition: color 0.2s ease-out 0s;
+}
+
+.nav__subtoggle:hover {
+  color: var(--color-almost-black);
 }
 
 .nav__subtoggle-icon {
@@ -264,6 +269,7 @@ body {
   gap: 1rem;
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease-out 0s;
 }
 
 .nav__link--login {
@@ -275,6 +281,15 @@ body {
   justify-content: center;
   border: 1.5px solid var(--color-medium-gray);
   border-radius: 0.875rem;
+  transition: border-color 0.2s ease-out 0s;
+}
+
+.nav__link:hover {
+  color: var(--color-almost-black);
+}
+
+.nav__link--register:hover {
+  border-color: var(--color-almost-black);
 }
 
 .nav__icon {
@@ -327,14 +342,21 @@ body {
 
 .hero__cta {
   --flow-space: 1.5rem;
-  padding: 0.75rem 1.25rem 0.625rem 1.5rem;
+  padding: 0.6875rem 1.1875rem 0.5625rem 1.4375rem;
   display: inline-block;
+  background-color: var(--color-almost-black);
+  border: 1px solid var(--color-almost-black);
+  border-radius: 0.9375rem;
   color: var(--color-almost-white);
   font-weight: var(--font-weight-bold);
   text-decoration: none;
   letter-spacing: -0.013875em;
-  background-color: var(--color-almost-black);
-  border-radius: 0.9375rem;
+  transition: all 0.2s ease-out 0s;
+}
+
+.hero__cta:hover {
+  background-color: var(--color-almost-white);
+  color: var(--color-almost-black);
 }
 
 .hero__client-list {
@@ -498,7 +520,7 @@ body {
   }
 
   .hero__cta {
-    padding: 0.9375rem 1.75rem 0.8125rem 1.9375rem;
+    padding: 0.875rem 1.75rem 0.75rem 1.9375rem;
     align-self: flex-start;
   }
 
